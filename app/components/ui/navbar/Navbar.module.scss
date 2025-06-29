@@ -4,8 +4,8 @@
     color: white;
     min-height: 100vh;
          @media (max-width: 1080px) {
-    left: -14rem;
-    position: absolute;
+    display: none;
+    min-height: 145rem;
   }
   .menu{
     position: absolute;

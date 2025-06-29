@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import Chart from "../components/ui/chart/chart";
 import Searchbar from "../components/ui/searchbar/Searchbar";
 import Card from "../components/ui/card/Card";
+import Link from "next/link";
 
 type User = {
   name: {
@@ -50,6 +51,12 @@ export default function DashboardPage() {
         </div>
 
         <Chart />
+      </div>
+      <div className={styles.footer}>
+        <Link className={styles.link} href="/auth">
+          {" "}
+          Log out
+        </Link>
       </div>
     </div>
   );
