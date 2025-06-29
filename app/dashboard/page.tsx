@@ -36,12 +36,19 @@ export default function DashboardPage() {
   return (
     <div className={styles.container}>
       <Searchbar />
+      <div className={styles.profile}>
+        <img src={user.picture.large} />
+        <h1>
+          {user.name.first} {user.name.last}
+        </h1>
+      </div>
       <div className={styles.components}>
         <div className={styles.cards}>
           <Card />
           <Card />
           <Card />
         </div>
+
         <Chart />
       </div>
     </div>
