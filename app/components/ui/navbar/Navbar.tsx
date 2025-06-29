@@ -12,8 +12,6 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
 function Navbar() {
-  const [isSidebarOpen, setSidebarOpen] = useState(null);
-
   const [user, setUser] = useState<any>(null);
   const router = useRouter();
 
