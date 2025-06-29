@@ -6,8 +6,19 @@ import Chart from "../components/ui/chart/chart";
 import Searchbar from "../components/ui/searchbar/Searchbar";
 import Card from "../components/ui/card/Card";
 
+type User = {
+  name: {
+    first: string;
+    last: string;
+  };
+  picture: {
+    large: string;
+    medium: string;
+    thumbnail: string;
+  };
+};
 export default function DashboardPage() {
-  const [user, setUser] = useState<any>(null);
+  const [user, setUser] = useState<User | null>(null);
   const router = useRouter();
 
   useEffect(() => {

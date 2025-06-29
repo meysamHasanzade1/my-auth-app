@@ -10,9 +10,19 @@ import {
 } from "react-icons/md";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-
+type User = {
+  name: {
+    first: string;
+    last: string;
+  };
+  picture: {
+    large: string;
+    medium: string;
+    thumbnail: string;
+  };
+};
 function Navbar() {
-  const [user, setUser] = useState<any>(null);
+  const [user, setUser] = useState<User | null>(null);
   const router = useRouter();
 
   useEffect(() => {
