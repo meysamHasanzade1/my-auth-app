@@ -1,0 +1,29 @@
+.container{
+    background: #182237;
+    padding: 20px;
+    display: flex;
+    border-radius: 8px;
+    cursor: pointer;
+    gap: 20px;
+    color: #fff;
+    &:hover{
+        background: #2e374a;
+    }
+    .detail{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .span1{
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .span2{
+            font-weight: lighter;
+            font-size: 24px;
+            .span3{
+                color: lime;
+            }
+        }
+        
+    }
+}

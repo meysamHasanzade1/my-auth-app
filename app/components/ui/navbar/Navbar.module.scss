@@ -1,0 +1,55 @@
+.container{
+    width: 20%;
+    background: #182237;
+    color: white;
+    min-height: 100vh;
+         @media (max-width: 1080px) {
+    left: -14rem;
+    position: absolute;
+  }
+  .menu{
+    position: absolute;
+    display: none;
+    cursor: pointer;
+     @media (max-width: 1080px) {
+        display: block;
+        left: 15rem;
+        top: 2rem;
+        z-index: 10;
+  }
+  }
+    .profile{
+        padding: 3rem 2rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+    }
+    ul{
+        list-style: none;
+        margin-top: 2rem;
+        li{ 
+            margin-top: 3rem;
+            width: 80%;
+            .link{
+                padding: 20px 10px;
+                color: white;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                width: 100%;
+                border-radius: 6px;
+                &:hover{
+                    background: #2e3649;
+                }
+            }
+
+        }
+    }
+
+}

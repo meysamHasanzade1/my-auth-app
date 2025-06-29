@@ -1,0 +1,15 @@
+.chart{
+    height: 450px;
+    border-radius: 10px;
+    background: #182237;
+    padding: 20px;
+    width: 50rem;
+    margin: 0 auto;
+    @media (max-width: 1080px) {
+    width: 100%;
+  }
+    h2{
+        color: gray;
+        font-size: 1rem;
+    }
+}
